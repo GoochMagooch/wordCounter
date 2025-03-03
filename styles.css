@@ -4,6 +4,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: url('matrix.png');
+    background-size: 100vw 100vh;
 }
 
 .container {
