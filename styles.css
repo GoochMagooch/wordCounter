@@ -1,0 +1,42 @@
+body {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 475px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: monospace;
+}
+
+input {
+    height: 47%;
+    width: 98%;
+}
+
+button {
+    width: 100px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 3px;
+    background-color: white;
+    font-weight: bold;
+}
+
+p {
+    color: white;
+    font-family: monospace;
+    font-size: 24px;
+}
