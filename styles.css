@@ -21,7 +21,7 @@ h1 {
     font-family: monospace;
 }
 
-input {
+#input {
     height: 47%;
     width: 98%;
 }
