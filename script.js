@@ -1,6 +1,6 @@
 const myInput = document.getElementById('input')
-const output = document.getElementById('word-output')
-const charOutput = document.getElementById('character')
+const wordOutput = document.getElementById('word-output')
+const charOutput = document.getElementById('char-output')
 
 myInput.addEventListener('input', function() {
     let charCount = myInput.value.replace(/\s/g, '').length
@@ -10,7 +10,7 @@ myInput.addEventListener('input', function() {
 myInput.addEventListener('input', function() {
     let inputValue = myInput.value.trim()
     let words = inputValue.length > 0 ? inputValue.split(/\s+/).length : 0 // Split by spaces and count words
-    output.textContent = `Words: ${words}`
+    wordOutput.textContent = `Words: ${words}`
 })
 
 // "this sentence has ten words in it and 43 characters!" will output:
