@@ -17,4 +17,4 @@ myInput.addEventListener('input', function() {
 
 // "this sentence has ten words in it and 43 characters!" will output:
 // Words: 10
-// Characters: 43
+// Characters: 42
