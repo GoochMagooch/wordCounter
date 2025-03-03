@@ -1,8 +1,6 @@
 const myInput = document.getElementById('input')
 const output = document.getElementById('word-output')
-const outputValue = output.innerText
 const charOutput = document.getElementById('character')
-let charValue = charOutput.innerText
 
 myInput.addEventListener('input', function() {
     let charCount = myInput.value.replace(/\s/g, '').length
