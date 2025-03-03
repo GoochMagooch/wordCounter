@@ -9,8 +9,8 @@ myInput.addEventListener('input', function() {
     charOutput.textContent = `Characters: ${charCount}`
 })
 
-function countWords() {
+myInput.addEventListener('input', function() {
     let inputValue = myInput.value.trim()
-    let words = inputValue.length > 0 ? inputValue.split(/\s+/).length : 0 // Split by spaces and count words
-    output.textContent = `Words: ${words}`
-}
+    let wordCount = inputValue.length > 0 ? inputValue.split(/\s+/).length : 0 // Split by spaces and count words
+    output.textContent = `Words: ${wordCount}`
+})
