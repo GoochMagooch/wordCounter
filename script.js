@@ -1,5 +1,6 @@
 let input = document.getElementById('input')
 let output = document.getElementById('word-output')
+let outputValue = output.innerText
 
 function countWords() {
     let inputValue = input.value
@@ -11,5 +12,6 @@ function countWords() {
         }
     }
     words = spaces + 1
+    output.textContent = outputValue
     output.textContent += words
 }
