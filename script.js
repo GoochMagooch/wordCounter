@@ -1,4 +1,4 @@
-const myInput = document.getElementById('input')
+const myInput = document.getElementById('word-input')
 const wordOutput = document.getElementById('word-output')
 const charOutput = document.getElementById('char-output')
 
