@@ -11,7 +11,12 @@ function countWords() {
             spaces += 1
         }
     }
-    words = spaces + 1
-    output.textContent = outputValue
-    output.textContent += words
+    if (inputValue) {
+        words = spaces + 1
+        output.textContent = outputValue
+        output.textContent += words
+    } else {
+        output.textContent = outputValue
+        output.textContent += " 0"
+    }
 }
