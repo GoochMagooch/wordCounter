@@ -24,7 +24,7 @@ h1 {
     color: white;
 }
 
-#word-input {
+textarea {
     height: 47%;
     width: 98%;
     font-size: 20px;
