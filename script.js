@@ -1,22 +1,16 @@
-let input = document.getElementById('input')
-let output = document.getElementById('word-output')
-let outputValue = output.innerText
+const myInput = document.getElementById('input')
+const output = document.getElementById('word-output')
+const outputValue = output.innerText
+const charOutput = document.getElementById('character')
+let charValue = charOutput.innerText
+
+myInput.addEventListener('input', function() {
+    let charCount = myInput.value.replace(/\s/g, '').length
+    charOutput.textContent = `Characters: ${charCount}`
+})
 
 function countWords() {
-    let inputValue = input.value
-    let spaces = 0
-    let words = 0
-    for (let i = 0; i < inputValue.length; i++) {
-        if (inputValue[i] === ' ') {
-            spaces += 1
-        }
-    }
-    if (inputValue) {
-        words = spaces + 1
-        output.textContent = outputValue
-        output.textContent += words
-    } else {
-        output.textContent = outputValue
-        output.textContent += " 0"
-    }
+    let inputValue = myInput.value.trim()
+    let words = inputValue.length > 0 ? inputValue.split(/\s+/).length : 0 // Split by spaces and count words
+    output.textContent = `Words: ${words}`
 }
